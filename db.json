@@ -369,6 +369,306 @@
       "category": "Health",
       "dueDate": "2026-07-27",
       "createdAt": "2026-07-14"
+    },
+    {
+      "id": "40",
+      "title": "Implement User Authentication",
+      "description": "Add JWT tokens, refresh mechanism, and secure session management",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-25",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "41",
+      "title": "Database Migration Script",
+      "description": "Create migration scripts to update schema and apply patches",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-22",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "42",
+      "title": "Performance Optimization",
+      "description": "Profile application, identify bottlenecks, and optimize queries",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-30",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "43",
+      "title": "Unit Test Coverage",
+      "description": "Write unit tests for all service modules to achieve 80% coverage",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-28",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "44",
+      "title": "API Rate Limiting",
+      "description": "Implement rate limiting and throttling on API endpoints",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-26",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "45",
+      "title": "Quarterly Business Review",
+      "description": "Prepare slides with revenue, expenses, and market analysis",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Finance",
+      "dueDate": "2026-07-20",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "46",
+      "title": "Expense Report Audit",
+      "description": "Review and verify all employee expense submissions for accuracy",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Finance",
+      "dueDate": "2026-07-19",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "47",
+      "title": "Contract Negotiation",
+      "description": "Finalize vendor contract terms and sign digital agreements",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Finance",
+      "dueDate": "2026-07-24",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "48",
+      "title": "Social Media Analytics",
+      "description": "Analyze engagement metrics and prepare monthly report for stakeholders",
+      "priority": "Medium",
+      "status": "Completed",
+      "category": "Marketing",
+      "dueDate": "2026-07-15",
+      "createdAt": "2026-07-10"
+    },
+    {
+      "id": "49",
+      "title": "Email Campaign Setup",
+      "description": "Design and configure automated email sequences for onboarding",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Marketing",
+      "dueDate": "2026-07-23",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "50",
+      "title": "Brand Identity Refresh",
+      "description": "Update logo, color palette, and typography guidelines for rebrand",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Marketing",
+      "dueDate": "2026-08-05",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "51",
+      "title": "Responsive Design Audit",
+      "description": "Test all pages on mobile, tablet, and desktop viewports",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Design",
+      "dueDate": "2026-07-21",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "52",
+      "title": "Icon Set Creation",
+      "description": "Design and export 50+ custom icons for the application UI",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Design",
+      "dueDate": "2026-07-29",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "53",
+      "title": "Color Accessibility Check",
+      "description": "Verify WCAG 2.1 AA compliance for color contrast ratios",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Design",
+      "dueDate": "2026-07-25",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "54",
+      "title": "Weekly Team Standup",
+      "description": "Conduct 30-minute sync with team for status and blockers",
+      "priority": "Low",
+      "status": "Completed",
+      "category": "Development",
+      "dueDate": "2026-07-18",
+      "createdAt": "2026-07-17"
+    },
+    {
+      "id": "55",
+      "title": "Code Review Session",
+      "description": "Review pull requests and provide feedback for improvements",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-18",
+      "createdAt": "2026-07-17"
+    },
+    {
+      "id": "56",
+      "title": "Bug Triage Meeting",
+      "description": "Prioritize and assign open bug reports to team members",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-19",
+      "createdAt": "2026-07-17"
+    },
+    {
+      "id": "57",
+      "title": "Gym Session - Strength",
+      "description": "Perform leg day workout: squats, lunges, and calf raises",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Health",
+      "dueDate": "2026-07-18",
+      "createdAt": "2026-07-17"
+    },
+    {
+      "id": "58",
+      "title": "Wellness Seminar",
+      "description": "Attend corporate wellness program on stress management",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Health",
+      "dueDate": "2026-07-20",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "59",
+      "title": "Book Travel Accommodation",
+      "description": "Reserve hotels and rental cars for upcoming business trip",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-07-22",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "60",
+      "title": "Vehicle Maintenance",
+      "description": "Schedule oil change, tire rotation, and general vehicle inspection",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-07-25",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "61",
+      "title": "Home Renovation Planning",
+      "description": "Consult contractor, get quotes, and finalize kitchen redesign",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-08-10",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "62",
+      "title": "Update Portfolio Website",
+      "description": "Add new projects, update skills, and refresh testimonials",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-28",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "63",
+      "title": "Mobile App Beta Testing",
+      "description": "Test new features on iOS and Android with internal testers",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-23",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "64",
+      "title": "Team Building Activity",
+      "description": "Organize off-site team lunch and outdoor team games",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-07-26",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "65",
+      "title": "Customer Feedback Survey",
+      "description": "Create and distribute survey to gather product feedback and insights",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Marketing",
+      "dueDate": "2026-07-27",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "66",
+      "title": "Documentation Update",
+      "description": "Update API docs, README, and installation guides",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-08-02",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "67",
+      "title": "Security Audit",
+      "description": "Perform comprehensive security assessment and penetration testing",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-08-01",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "68",
+      "title": "Content Creation",
+      "description": "Write blog posts, tutorials, and technical documentation",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Marketing",
+      "dueDate": "2026-07-31",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "69",
+      "title": "Infrastructure Upgrade",
+      "description": "Migrate servers to cloud, update hosting configuration",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-08-08",
+      "createdAt": "2026-07-15"
     }
   ],
   "activities": [
