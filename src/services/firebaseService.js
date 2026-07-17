@@ -10,14 +10,19 @@ import {
   limit,
   Timestamp,
 } from 'firebase/firestore';
-import { db } from '../config/firebaseConfig';
+import { db, firebaseEnabled } from '../config/firebaseConfig';
 
 const TASKS_COLLECTION = 'tasks';
 const ACTIVITIES_COLLECTION = 'activities';
 
 export const firebaseService = {
+  isEnabled: () => firebaseEnabled,
+
   // Tasks CRUD Operations
   getTasks: async () => {
+    if (!firebaseEnabled) {
+      throw new Error('Firebase is not configured. Using fallback service instead.');
+    }
     try {
       const tasksRef = collection(db, TASKS_COLLECTION);
       const snapshot = await getDocs(tasksRef);
@@ -32,6 +37,9 @@ export const firebaseService = {
   },
 
   getTask: async (id) => {
+    if (!firebaseEnabled) {
+      throw new Error('Firebase is not configured. Using fallback service instead.');
+    }
     try {
       const tasksRef = collection(db, TASKS_COLLECTION);
       const snapshot = await getDocs(tasksRef);
@@ -44,6 +52,9 @@ export const firebaseService = {
   },
 
   addTask: async (task) => {
+    if (!firebaseEnabled) {
+      throw new Error('Firebase is not configured. Using fallback service instead.');
+    }
     try {
       const tasksRef = collection(db, TASKS_COLLECTION);
       const docRef = await addDoc(tasksRef, {
@@ -58,6 +69,9 @@ export const firebaseService = {
   },
 
   updateTask: async (id, task) => {
+    if (!firebaseEnabled) {
+      throw new Error('Firebase is not configured. Using fallback service instead.');
+    }
     try {
       const taskRef = doc(db, TASKS_COLLECTION, id);
       await updateDoc(taskRef, task);
@@ -69,6 +83,9 @@ export const firebaseService = {
   },
 
   deleteTask: async (id) => {
+    if (!firebaseEnabled) {
+      throw new Error('Firebase is not configured. Using fallback service instead.');
+    }
     try {
       const taskRef = doc(db, TASKS_COLLECTION, id);
       await deleteDoc(taskRef);
@@ -81,6 +98,9 @@ export const firebaseService = {
 
   // Activities Log Operations
   getActivities: async () => {
+    if (!firebaseEnabled) {
+      throw new Error('Firebase is not configured. Using fallback service instead.');
+    }
     try {
       const activitiesRef = collection(db, ACTIVITIES_COLLECTION);
       const q = query(activitiesRef, orderBy('timestamp', 'desc'), limit(10));
@@ -96,6 +116,9 @@ export const firebaseService = {
   },
 
   addActivity: async (activityText) => {
+    if (!firebaseEnabled) {
+      throw new Error('Firebase is not configured. Using fallback service instead.');
+    }
     try {
       const activitiesRef = collection(db, ACTIVITIES_COLLECTION);
       const docRef = await addDoc(activitiesRef, {
