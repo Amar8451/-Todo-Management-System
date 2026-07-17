@@ -1,0 +1,402 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Complete React Project",
+      "description": "Build professional CRUD application with React, Bootstrap, and Axios",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-08-01",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "2",
+      "title": "Prepare Marketing Presentation",
+      "description": "Design slides for the product launch meeting with Q3 metrics",
+      "priority": "Medium",
+      "status": "Completed",
+      "category": "Marketing",
+      "dueDate": "2026-07-14",
+      "createdAt": "2026-07-10"
+    },
+    {
+      "id": "3",
+      "title": "Buy Groceries and Essentials",
+      "description": "Get milk, eggs, bread, coffee beans, and veggies from local store",
+      "priority": "Low",
+      "status": "Completed",
+      "category": "Personal",
+      "dueDate": "2026-07-13",
+      "createdAt": "2026-07-12"
+    },
+    {
+      "id": "4",
+      "title": "Fix Critical Production Bug",
+      "description": "Investigate and resolve 500 error on checkout page payment flow",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-12",
+      "createdAt": "2026-07-11"
+    },
+    {
+      "id": "5",
+      "title": "Design Landing Page Mockup",
+      "description": "Create high-fidelity mockups in Figma for the updated home page layout",
+      "priority": "High",
+      "status": "Completed",
+      "category": "Design",
+      "dueDate": "2026-07-20",
+      "createdAt": "2026-07-12"
+    },
+    {
+      "id": "6",
+      "title": "Morning Gym Session",
+      "description": "Perform upper body strength routine followed by 20 mins cardio",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Health",
+      "dueDate": "2026-07-15",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "title": "kkjdjf",
+      "description": "jkdhf",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-07-14",
+      "createdAt": "2026-07-14",
+      "id": "5Q4n8TsFFhg"
+    },
+    {
+      "id": "10",
+      "title": "Database Optimization",
+      "description": "Index columns, clear deadlocks, and restructure tasks schema queries",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-25",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "11",
+      "title": "Q3 Financial Reporting",
+      "description": "Compile revenue stats and cost analysis worksheets for the executives review",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Finance",
+      "dueDate": "2026-07-18",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "12",
+      "title": "User Interface Rebrand",
+      "description": "Revamp design patterns guidelines, typography selections, and style grids",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Design",
+      "dueDate": "2026-08-10",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "13",
+      "title": "Weekly Team Meeting",
+      "description": "Review status updates and plan the next sprint deliverables with developers",
+      "priority": "Low",
+      "status": "Completed",
+      "category": "Marketing",
+      "dueDate": "2026-07-12",
+      "createdAt": "2026-07-11"
+    },
+    {
+      "id": "14",
+      "title": "Annual Health Checkup",
+      "description": "Visit primary care physician for routine check and laboratory blood panels",
+      "priority": "Medium",
+      "status": "Completed",
+      "category": "Health",
+      "dueDate": "2026-07-10",
+      "createdAt": "2026-07-09"
+    },
+    {
+      "id": "15",
+      "title": "Plan Summer Vacation",
+      "description": "Find flight deals, reserve hotels, and research places to explore in Europe",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-08-15",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "16",
+      "title": "Write API Documentation",
+      "description": "Draft Swagger JSON definition specs for the public integrations endpoints",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-22",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "17",
+      "title": "Figma Design Review",
+      "description": "Review user experience flows, layouts alignments, and components interactions",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Design",
+      "dueDate": "2026-07-16",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "18",
+      "title": "Social Media Campaign",
+      "description": "Draft copy and design creatives for Q3 product promotion on LinkedIn",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Marketing",
+      "dueDate": "2026-07-17",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "19",
+      "title": "Tax Declaration Form",
+      "description": "Fill income statements worksheets and submit files to government site",
+      "priority": "High",
+      "status": "Completed",
+      "category": "Finance",
+      "dueDate": "2026-07-05",
+      "createdAt": "2026-07-01"
+    },
+    {
+      "id": "20",
+      "title": "Dentist Appointment",
+      "description": "Routine dental examination, cleaning services, and x-ray screening",
+      "priority": "Medium",
+      "status": "Completed",
+      "category": "Health",
+      "dueDate": "2026-07-13",
+      "createdAt": "2026-07-12"
+    },
+    {
+      "id": "21",
+      "title": "Read Architecture Book",
+      "description": "Complete chapters 4 to 8 of Clean Architecture by Robert Martin",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-08-30",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "22",
+      "title": "Setup CI/CD Pipeline",
+      "description": "Configure GitHub Actions flow to run linter, build project, and deploy tests",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-29",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "23",
+      "title": "Mobile App Layouts",
+      "description": "Sketch wireframes for dashboard panel and items listing pages on mobile size",
+      "priority": "Medium",
+      "status": "Completed",
+      "category": "Design",
+      "dueDate": "2026-07-08",
+      "createdAt": "2026-07-05"
+    },
+    {
+      "id": "24",
+      "title": "Press Release Draft",
+      "description": "Write article announcing new TaskFlow productivity features and cloud sync",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Marketing",
+      "dueDate": "2026-07-19",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "25",
+      "title": "Review Budget Forecast",
+      "description": "Examine department expenditures sheet and adjust budget values for next sprint",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Finance",
+      "dueDate": "2026-07-28",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "26",
+      "title": "Cardio Interval Training",
+      "description": "Perform high intensity interval treadmill routine for 35 mins with cool down",
+      "priority": "Low",
+      "status": "Completed",
+      "category": "Health",
+      "dueDate": "2026-07-14",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "27",
+      "title": "Clean Kitchen & Pantry",
+      "description": "Wipe shelves, throw expired goods, and organize items inside plastic boxes",
+      "priority": "Low",
+      "status": "Completed",
+      "category": "Personal",
+      "dueDate": "2026-07-13",
+      "createdAt": "2026-07-12"
+    },
+    {
+      "id": "28",
+      "title": "Implement Auth Services",
+      "description": "Configure JSON Web Token generation, refresh schema, and cookies storage API",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-20",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "29",
+      "title": "Create SVG Asset Icons",
+      "description": "Design custom scale SVG graphics for sidebar links, tags, and status states",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Design",
+      "dueDate": "2026-07-31",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "30",
+      "title": "Newsletter Distribution",
+      "description": "Compile news article links, review formatting, and send campaign to lists",
+      "priority": "Low",
+      "status": "Completed",
+      "category": "Marketing",
+      "dueDate": "2026-07-11",
+      "createdAt": "2026-07-10"
+    },
+    {
+      "id": "31",
+      "title": "Analyze Stock Portfolio",
+      "description": "Rebalance assets weight percentages and evaluate quarterly yields indices",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Finance",
+      "dueDate": "2026-08-05",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "32",
+      "title": "Prepare Healthy Meal Prep",
+      "description": "Cook brown rice, chicken breasts, and steamed broccoli for the week's lunch boxes",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Health",
+      "dueDate": "2026-07-16",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "33",
+      "title": "Renew Car Insurance",
+      "description": "Compare local insurance plans prices and purchase policy renewal document",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Personal",
+      "dueDate": "2026-07-21",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "34",
+      "title": "Refactor Legacy Codebase",
+      "description": "Clean obsolete classes, simplify conditionals, and replace custom AJAX with Axios",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-08-12",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "35",
+      "title": "Prototype Animation Demos",
+      "description": "Experiment with CSS transforms and keyframe loops to animate metrics cards load",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Design",
+      "dueDate": "2026-07-26",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "36",
+      "title": "SEO Strategy Audit",
+      "description": "Research search keywords volumes, crawl logs, and index page metadata status",
+      "priority": "High",
+      "status": "Completed",
+      "category": "Marketing",
+      "dueDate": "2026-07-09",
+      "createdAt": "2026-07-04"
+    },
+    {
+      "id": "37",
+      "title": "Process Vendor Invoices",
+      "description": "Validate incoming invoices details and update payment schedule records",
+      "priority": "Low",
+      "status": "Completed",
+      "category": "Finance",
+      "dueDate": "2026-07-14",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "38",
+      "title": "Order Ergonomic Chair",
+      "description": "Read office gear reviews, verify lumbar support features, and purchase chair",
+      "priority": "Medium",
+      "status": "Completed",
+      "category": "Personal",
+      "dueDate": "2026-07-12",
+      "createdAt": "2026-07-10"
+    },
+    {
+      "id": "39",
+      "title": "Bi-weekly Dental Floss",
+      "description": "Ensure flossing routine is followed morning and night for healthy gums",
+      "priority": "Low",
+      "status": "Pending",
+      "category": "Health",
+      "dueDate": "2026-07-27",
+      "createdAt": "2026-07-14"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1",
+      "text": "Task 'Design Landing Page Mockup' marked as Completed",
+      "timestamp": "2026-07-14T10:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "text": "Task 'Complete React Project' was created",
+      "timestamp": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "text": "Task 'Fix Critical Production Bug' priority increased to High",
+      "timestamp": "2026-07-13T15:20:00.000Z"
+    },
+    {
+      "text": "Marked task \"Prepare Marketing Presentation\" as Completed",
+      "timestamp": "2026-07-14T10:09:31.380Z",
+      "id": "oWx7BJFpKCQ"
+    },
+    {
+      "text": "Created task: \"kkjdjf\"",
+      "timestamp": "2026-07-14T10:10:40.105Z",
+      "id": "FXM4aWdHzmU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
