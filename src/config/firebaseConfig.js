@@ -5,7 +5,7 @@ let app = null;
 let db = null;
 let firebaseEnabled = false;
 
-// Check if all required Firebase env vars are present
+// Check if all required Firebase env vars are present and non-empty
 const hasFirebaseConfig = () => {
   const requiredVars = [
     'VITE_FIREBASE_API_KEY',
@@ -16,7 +16,10 @@ const hasFirebaseConfig = () => {
     'VITE_FIREBASE_APP_ID',
   ];
   
-  return requiredVars.every(varName => import.meta.env[varName]);
+  return requiredVars.every(varName => {
+    const value = import.meta.env[varName];
+    return value && value.trim() !== '';
+  });
 };
 
 // Initialize Firebase only if all config is available
