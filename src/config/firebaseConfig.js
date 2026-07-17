@@ -18,7 +18,7 @@ const hasFirebaseConfig = () => {
   
   return requiredVars.every(varName => {
     const value = import.meta.env[varName];
-    return value && value.trim() !== '';
+    return value && typeof value === 'string' && value.trim() !== '';
   });
 };
 
