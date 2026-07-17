@@ -9,12 +9,26 @@ const api = axios.create({
   },
 });
 
+let cachedDbData = null;
+
+const loadDbData = async () => {
+  if (cachedDbData) return cachedDbData;
+  try {
+    const resp = await fetch('/db.json');
+    if (!resp.ok) throw new Error(`Failed to fetch db.json: ${resp.status}`);
+    cachedDbData = await resp.json();
+    return cachedDbData;
+  } catch (error) {
+    console.error('Error loading db.json:', error);
+    throw error;
+  }
+};
+
 export const taskService = {
   // Tasks CRUD (production reads static DB, writes are no‑ops)
   getTasks: async () => {
     if (import.meta.env.PROD) {
-      const resp = await fetch('/db.json');
-      const data = await resp.json();
+      const data = await loadDbData();
       return data.tasks || [];
     }
     const response = await api.get('/tasks');
@@ -24,7 +38,7 @@ export const taskService = {
   getTask: async (id) => {
     if (import.meta.env.PROD) {
       const tasks = await taskService.getTasks();
-      return tasks.find(t => t.id === Number(id));
+      return tasks.find(t => t.id === String(id) || t.id === Number(id));
     }
     const response = await api.get(`/tasks/${id}`);
     return response.data;
@@ -60,8 +74,7 @@ export const taskService = {
   // Activities Log (production reads static DB)
   getActivities: async () => {
     if (import.meta.env.PROD) {
-      const resp = await fetch('/db.json');
-      const data = await resp.json();
+      const data = await loadDbData();
       const activities = data.activities || [];
       // sort newest first, limit 10
       return activities
