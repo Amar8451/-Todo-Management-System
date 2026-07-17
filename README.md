@@ -68,9 +68,46 @@ Notes for frontend API calls
 - **Core**: React 19, JavaScript (ES6+), HTML5, CSS3 Custom Properties
 - **Styling**: React Bootstrap, Bootstrap v5, Bootstrap Icons
 - **HTTP Client**: Axios
-- **Database Server**: JSON Server
+- **Database**: Firebase Firestore (cloud) / JSON Server (local)
 - **Charts**: Chart.js, React ChartJS 2
 - **Interactions**: Canvas Confetti (celebration on completion)
+
+---
+
+## 🔥 Firebase Setup (For Vercel Deployment)
+
+The application supports Firebase Firestore for cloud data persistence. When deployed to Vercel, Firebase will be used as the backend instead of the local JSON Server.
+
+### Quick Start
+
+1. **Create Firebase Project**
+   - Go to [Firebase Console](https://console.firebase.google.com/)
+   - Create a new project: "Todo-Management-System"
+
+2. **Enable Firestore Database**
+   - Go to Build > Firestore Database
+   - Create database in production mode (us-central1 region)
+
+3. **Get Firebase Credentials**
+   - Go to Settings > Project Settings
+   - Copy the web app config
+
+4. **Configure Locally**
+   - Create `.env.local` in the project root:
+     ```
+     VITE_FIREBASE_API_KEY=your_key
+     VITE_FIREBASE_AUTH_DOMAIN=your_domain
+     VITE_FIREBASE_PROJECT_ID=your_project_id
+     VITE_FIREBASE_STORAGE_BUCKET=your_bucket
+     VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+     VITE_FIREBASE_APP_ID=your_app_id
+     ```
+
+5. **Configure Vercel**
+   - Add the same environment variables to Vercel project settings
+   - Vercel will automatically use them during build and deployment
+
+📄 **Detailed Setup Guide**: See [FIREBASE_SETUP.md](./FIREBASE_SETUP.md)
 
 ---
 
