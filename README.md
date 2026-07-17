@@ -1,6 +1,6 @@
 # TaskFlow – Professional Todo Management System
 
-TaskFlow is a modern, responsive Todo Management System built using React.js, React Bootstrap, and a local JSON REST API as the data source. The application models a professional admin dashboard layout with statistics, charts, CRUD operations, searching, filtering, and instant notifications.
+TaskFlow is a modern, responsive Todo Management System built using React.js, React Bootstrap, and a local JSON REST API as the data source. The application models a professional admin dashboard layout with task CRUD operations and analytics.
 
 ---
 
@@ -18,20 +18,49 @@ Make sure you have [Node.js](https://nodejs.org/) (v18+) installed on your machi
 
 ### Running the Application
 
-To run the full stack, you need to spin up the local mock server and the Vite React development server:
+You can run the full stack either with a single command (recommended for local development) or start the API and web servers separately.
 
-1. **Start the API Server**:
-   Launch the JSON Server mock API on port `5000`:
-   ```bash
-   npx json-server --watch db.json --port 5000
-   ```
+Recommended (single command)
 
-2. **Start the React Application**:
-   In a separate terminal tab, run the Vite development server:
-   ```bash
-   npm run dev
-   ```
-   *Open [http://localhost:5173/](http://localhost:5173/) to interact with the application!*
+```bash
+npm run dev
+```
+
+This runs two processes concurrently:
+- A local JSON Server mock API serving `db.json` on port `5000`.
+- The Vite development server for the React frontend (usually at http://localhost:5173).
+
+Start servers separately
+
+- Start only the API server (useful for CI or when the frontend runs elsewhere):
+
+```bash
+npm run start:api
+# or
+npx json-server --watch db.json --port 5000
+```
+
+- Start only the web frontend:
+
+```bash
+npm run start:web
+# or
+vite
+```
+
+Testing the API
+
+- After starting the API server, confirm it serves data:
+
+```bash
+curl http://localhost:5000/tasks
+```
+
+This should return the `tasks` array from `db.json`.
+
+Notes for frontend API calls
+
+- The API is available at `http://localhost:5000` while developing. You can either call the full URL in your frontend (e.g. `fetch('http://localhost:5000/tasks')`) or configure a dev proxy in Vite if you prefer not to hard-code the host/port.
 
 ---
 
@@ -109,8 +138,8 @@ taskflow/
 │   │   └── helpers.js         # Date formatting and overdue calculations
 │   │
 │   ├── App.jsx                # Layout wrapper & hotkey listeners
-│   ├── main.jsx               # Entry-point mount configuration
-│   └── styles.css             # Main styling system, themes & animations
+│   │   ├── main.jsx               # Entry-point mount configuration
+│   │   └── styles.css             # Main styling system, themes & animations
 │
 ├── db.json                    # Local REST database schema
 ├── package.json               # Configured dependencies & run scripts

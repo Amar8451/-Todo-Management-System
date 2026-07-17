@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"json-server --watch db.json --port 5000\" \"vite\"",
+    "json-server": "json-server --watch db.json --port 5000 --host 0.0.0.0",
+    "dev": "concurrently \"npm run json-server\" \"vite\"",
+    "start:api": "npm run json-server",
+    "start:web": "vite",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"
