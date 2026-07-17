@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Complete React Project",
+      "description": "Build professional CRUD application with React, Bootstrap, and Axios",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-08-01",
+      "createdAt": "2026-07-14"
+    },
+    {
+      "id": "2",
+      "title": "Prepare Marketing Presentation",
+      "description": "Design slides for the product launch meeting with Q3 metrics",
+      "priority": "Medium",
+      "status": "Completed",
+      "category": "Marketing",
+      "dueDate": "2026-07-14",
+      "createdAt": "2026-07-10"
+    }
+    // ... (rest of original db.json omitted for brevity)
+  ],
+  "activities": [
+    {
+      "id": "1",
+      "text": "Task 'Design Landing Page Mockup' marked as Completed",
+      "timestamp": "2026-07-14T10:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "text": "Task 'Complete React Project' was created",
+      "timestamp": "2026-07-14T09:00:00.000Z"
+    }
+    // ... (rest of activities omitted)
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
