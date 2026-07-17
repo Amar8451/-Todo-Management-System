@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { firebaseService } from './firebaseService';
 
 const API_BASE_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
 
@@ -25,11 +26,10 @@ const loadDbData = async () => {
 };
 
 export const taskService = {
-  // Tasks CRUD (production reads static DB, writes are no‑ops)
+  // Tasks CRUD (production uses Firebase, development uses local JSON server)
   getTasks: async () => {
     if (import.meta.env.PROD) {
-      const data = await loadDbData();
-      return data.tasks || [];
+      return firebaseService.getTasks();
     }
     const response = await api.get('/tasks');
     return response.data;
@@ -37,8 +37,7 @@ export const taskService = {
 
   getTask: async (id) => {
     if (import.meta.env.PROD) {
-      const tasks = await taskService.getTasks();
-      return tasks.find(t => t.id === String(id) || t.id === Number(id));
+      return firebaseService.getTask(String(id));
     }
     const response = await api.get(`/tasks/${id}`);
     return response.data;
@@ -46,8 +45,7 @@ export const taskService = {
 
   addTask: async (task) => {
     if (import.meta.env.PROD) {
-      console.warn('Add task is disabled in production static mode');
-      return task; // no persistence
+      return firebaseService.addTask(task);
     }
     const response = await api.post('/tasks', task);
     return response.data;
@@ -55,8 +53,7 @@ export const taskService = {
 
   updateTask: async (id, task) => {
     if (import.meta.env.PROD) {
-      console.warn('Update task is disabled in production static mode');
-      return task;
+      return firebaseService.updateTask(String(id), task);
     }
     const response = await api.put(`/tasks/${id}`, task);
     return response.data;
@@ -64,22 +61,16 @@ export const taskService = {
 
   deleteTask: async (id) => {
     if (import.meta.env.PROD) {
-      console.warn('Delete task is disabled in production static mode');
-      return { id };
+      return firebaseService.deleteTask(String(id));
     }
     const response = await api.delete(`/tasks/${id}`);
     return response.data;
   },
 
-  // Activities Log (production reads static DB)
+  // Activities Log (production uses Firebase, development uses local JSON server)
   getActivities: async () => {
     if (import.meta.env.PROD) {
-      const data = await loadDbData();
-      const activities = data.activities || [];
-      // sort newest first, limit 10
-      return activities
-        .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
-        .slice(0, 10);
+      return firebaseService.getActivities();
     }
     const response = await api.get('/activities?_sort=timestamp&_order=desc&_limit=10');
     return response.data;
@@ -87,8 +78,7 @@ export const taskService = {
 
   addActivity: async (activityText) => {
     if (import.meta.env.PROD) {
-      console.warn('Add activity disabled in production static mode');
-      return { text: activityText, timestamp: new Date().toISOString() };
+      return firebaseService.addActivity(activityText);
     }
     const newActivity = {
       text: activityText,
