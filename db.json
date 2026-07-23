@@ -19,8 +19,37 @@
       "category": "Marketing",
       "dueDate": "2026-07-14",
       "createdAt": "2026-07-10"
+    },
+    {
+      "id": "3",
+      "title": "Design Landing Page Mockup",
+      "description": "Create wireframes and high-fidelity designs for the new product landing page",
+      "priority": "High",
+      "status": "Completed",
+      "category": "Design",
+      "dueDate": "2026-07-20",
+      "createdAt": "2026-07-12"
+    },
+    {
+      "id": "4",
+      "title": "Write Unit Tests",
+      "description": "Write unit tests for all service functions and React components",
+      "priority": "Medium",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-08-10",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "id": "5",
+      "title": "Fix Navigation Bug",
+      "description": "Resolve the sidebar collapse issue on mobile devices",
+      "priority": "High",
+      "status": "Pending",
+      "category": "Development",
+      "dueDate": "2026-07-25",
+      "createdAt": "2026-07-18"
     }
-    // ... (rest of original db.json omitted for brevity)
   ],
   "activities": [
     {
@@ -32,8 +61,11 @@
       "id": "2",
       "text": "Task 'Complete React Project' was created",
       "timestamp": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "text": "Task 'Prepare Marketing Presentation' marked as Completed",
+      "timestamp": "2026-07-13T15:00:00.000Z"
     }
-    // ... (rest of activities omitted)
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
